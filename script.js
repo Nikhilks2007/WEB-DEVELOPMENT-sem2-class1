@@ -58,10 +58,39 @@
 //     console.log(event.key)
 // })
 
-const handleSubmit=(event)=>{
-    event.preventDefault()
-    console.log("Form Submmited")
-}
+// const handleSubmit=(event)=>{
+//     event.preventDefault()
+//     console.log("Form Submmited")
+// }
 
-const form=document.querySelector("form")
-form.addEventListener("submit",handleSubmit)
+// const form=document.querySelector("form")
+// form.addEventListener("submit",handleSubmit)
+
+// console.log("first line")
+// setTimeout(()=> (console.log("After 2 sec")),2000)
+// console.log("second line")
+
+
+// setTimeout(()=>(
+//     alert("Danger site is not secure")
+// ),3*1000)
+
+
+// const timerId=setInterval(() => {
+//     console.log("Heloo Students")
+// }, 1000)
+
+// setTimeout(()=> (
+//     clearInterval(timerId)
+// ),10*1000)
+
+
+// count=1
+// const timerId=setInterval(() => {
+//     console.log(count)
+//     count+=1
+// }, 1000)
+
+// setTimeout(()=> (
+//     clearInterval(timerId)
+// ),10*1000)
