@@ -94,3 +94,64 @@
 // setTimeout(()=> (
 //     clearInterval(timerId)
 // ),10*1000)
+
+
+// console.log("Starting homework...")
+// setTimeout(() => {
+//     console.log("Homework done!")
+//     console.log("starting dinner...")
+//     setTimeout(() => {
+//         console.log("Dinner done!")
+//         console.log("starting ready to go out...")
+//         setTimeout(()=>{
+//             console.log("Going to the playground")
+
+//         },2000)
+
+//     },2000)
+
+
+// },2000)
+
+
+
+// function finishHomework(callback) {
+//   console.log("Starting homework...");
+//   setTimeout(() => {
+//     console.log("Homework done!");
+//     callback();
+//   }, 2000);
+// }
+
+// function eatDinner(callback) {
+//   console.log("Starting dinner...");
+//   setTimeout(() => {
+//     console.log("Dinner done!");
+//     callback();
+//   }, 1500);
+// }
+
+// function goToPlayground() {
+//   console.log("Going to the playground!");
+// }
+
+// // Chained in steps, but cleaner
+// finishHomework(() => {
+//   eatDinner(() => {
+//     goToPlayground();
+//   });
+// })
+
+
+const input=document.querySelector("#task")
+const btn=document.querySelector(".btn")
+const lists=document.querySelector(".list")
+btn.addEventListener("click",(e)=>{
+  e.preventDefault()
+  const id=document.createElement("li")
+  const deleteButton=document.createElement("button")
+  
+  li.innerText=input.value
+  lists.appendChild(li)
+  input.value=""
+})
