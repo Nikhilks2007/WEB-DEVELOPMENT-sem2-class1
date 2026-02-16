@@ -143,15 +143,175 @@
 // })
 
 
-const input=document.querySelector("#task")
-const btn=document.querySelector(".btn")
-const lists=document.querySelector(".list")
-btn.addEventListener("click",(e)=>{
-  e.preventDefault()
-  const id=document.createElement("li")
-  const deleteButton=document.createElement("button")
+// const input=document.querySelector("#task")
+// const btn=document.querySelector(".btn")
+// const lists=document.querySelector(".list")
+// btn.addEventListener("click",(e)=>{
+//   e.preventDefault()
+//   const id=document.createElement("li")
+//   const deleteButton=document.createElement("button")
   
-  li.innerText=input.value
-  lists.appendChild(li)
-  input.value=""
-})
+//   li.innerText=input.value
+//   lists.appendChild(li)
+//   input.value=""
+// })
+
+// const p=new Promise(function(resolve,reject){
+//   //reject()
+//   //resolve()
+//   setTimeout(() =>{
+//     let done=true
+//     if(done){
+//       resolve()
+//     }else{
+//       reject()
+//     }
+//   },5000)
+// })
+// p.then((data)=>{
+//   console.log("Resolve",data)
+
+// }).catch((err)=>{
+//   console.log("Rejected",err)
+// })
+
+// function doHomework(){
+
+//   return new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//       if(done){
+//         console.log("Homework is done")
+//         resolve("Homework is not done")
+//       }else{
+//         reject("Homework is not done")
+//       }
+//     },5000)
+//   })
+//   return p
+// }
+// doHomework().then((data)=>{
+//   console.log(data)
+//   return eatDinner()
+// }).then((data)=>
+
+// })
+
+
+// console.log("First Line")
+// setTimeout(() => {
+//     console.log("Inside Timeout")
+// }, 0);
+// const p = new Promise((resolve, reject) => {
+//     resolve()
+// })
+// p.then(() => {
+//     console.log("Inside Promise")
+// }).catch(() => {
+//     console.log("Inside catch")
+// })
+// console.log("Last Line")
+
+
+// const p2 = new Promise((resolve, reject) => {
+//     resolve()
+// })
+// p2.then(() => {
+//     console.log("Inside Promise")
+// }).catch(() => {
+//     console.log("Inside catch")
+// })
+// console.log("Last Line")
+
+// const p3 = new Promise((resolve, reject) => {
+//     resolve()
+// })
+// p3.then(() => {
+//     console.log("Inside Promise")
+// }).catch(() => {
+//     console.log("Inside catch")
+// })
+// console.log("Last Line")
+
+
+// const form = document.querySelector("#form");
+
+// form.addEventListener("submit", (event) => {
+//     event.preventDefault();
+
+//     console.log(eventTitle.value);
+//     console.log(eventDate.value);
+//     // console.log(eventTime.value);
+//     console.log(eventLocation.value);
+//     console.log(eventDescription.value);
+
+// });
+
+// function deliverFood(){
+//     return new Promise((resolve, reject) => {
+        
+//     })
+// }
+
+
+// function deliverFood().then((data)=>{
+//     console.log(data)
+//     return oreparedFood()
+// }).then((data)=>{
+//     console.log(data)
+//     return deliverFood()
+// })
+
+
+
+
+// function orderFood() {
+//     return new Promise(function(resolve, reject) {
+//         setTimeout(() => {
+//             console.log("Food ordered");
+//             resolve("Food ordered");
+//         }, 2000);
+//     });
+// }
+
+// function prepareFood() {
+//     return new Promise(function(resolve, reject) {
+//         setTimeout(() => {
+//             console.log("Food prepared");
+//             resolve("Food prepared");
+//         }, 1000);
+//     });
+// }
+
+// function deliverFood() {
+//     return new Promise(function(resolve, reject) {
+//         setTimeout(() => {
+//             console.log("Food Delivered");
+//             resolve("Food Delivered");
+//         }, 1000);
+//     });
+// }
+
+// orderFood().then((data) => {
+//     console.log(data);
+//     return prepareFood();
+// }).then((data) => {
+//     console.log(data);
+//     return deliverFood();
+// }).then((data) => {
+//     console.log(data);
+// }).catch((err) => {
+//     console.log(err);
+// });
+
+
+console.log("First Line")
+try{
+    console.log(sample)
+
+}catch(error){
+    throw new Error("Asses denied")
+
+}finally{
+    console.log("Finally block")
+}
+console.log("Last line")
