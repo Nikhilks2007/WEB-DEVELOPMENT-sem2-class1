@@ -304,14 +304,31 @@
 // });
 
 
-console.log("First Line")
-try{
-    console.log(sample)
+// console.log("First Line")
+// try{
+//     console.log(sample)
 
-}catch(error){
-    throw new Error("Asses denied")
+// }catch(error){
+//     throw new Error("Asses denied")
 
-}finally{
-    console.log("Finally block")
+// }finally{
+//     console.log("Finally block")
+// }
+// console.log("Last line")
+
+async function getdata() {
+    try{
+        
+        const response= await fetch("https://dummyjson.com/products")
+        if(response.ok===false)throw new Error("Data not found")
+        const data=await response.json()
+        console.log(data)
+
+
+    }catch(error){
+        console.log("Data not found")
+    }
+
 }
-console.log("Last line")
+getdata()
+    
