@@ -316,19 +316,84 @@
 // }
 // console.log("Last line")
 
-async function getdata() {
-    try{
+// async function getdata() {
+//     try{
         
-        const response= await fetch("https://dummyjson.com/products")
-        if(response.ok===false)throw new Error("Data not found")
-        const data=await response.json()
-        console.log(data)
+//         const response= await fetch("https://dummyjson.com/products")
+//         if(response.ok===false)throw new Error("Data not found")
+//         const data=await response.json()
+//         console.log(data)
 
 
-    }catch(error){
-        console.log("Data not found")
-    }
+//     }catch(error){
+//         console.log("Data not found")
+//     }
 
-}
-getdata()
+// }
+// getdata()
+
+
     
+
+// async function sendData() {
+//     try{
+//         const response = await fetch("https://dummyjson.com/products/add", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify({
+//                 title: "Macbook",
+//                 description: "Macbook Pro",
+//                 price: 100000,
+//                 rating: 4.5,
+//                 discountPercentage: 5,
+//                 stock: 5,
+//                 brand: "Apple",
+//             })
+//         })
+
+//         const data = await response.json()
+//         console.log(data)
+//     } catch(error) {
+//         console.log("Data Not Found")
+//     }   
+// }
+
+// sendData()
+
+
+
+let obj={
+    title: "Macbook",
+    description: "Macbook Pro",
+}
+
+// localStorage.setItem("obj",JSON.stringify(obj))
+// localStorage.setItem("name","Devendra")
+// localStorage.setItem("age".23)
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))
+// console.log(JSON.parse(localStorage.getItem("obj")))
+// localStorage.removeItem("age")
+
+
+// sessionStorage.setItem("obj",JSON.stringify(obj))
+// sessionStorage.setItem("name","king")
+// sessionStorage.setItem("age",23)
+// console.log(sessionStorage.getItem("name"))
+// console.log(sessionStorage.getItem("age"))
+// console.log(JSON.parse(sessionStorage.getItem("obj")))
+// sessionStorage.removeItem("age")
+
+
+document.cookie = "name=Jitesh Kumar; expires=sat, 31 Dec 2024 23:59:59 UTC;"
+document.cookie = "age=19; expires=sat, 31 Dec 2024 23:59:59 UTC;"
+
+console.log(document.cookie)                                                   // Cookies
+
+async function sample() {
+    await fetch("http://127.0.0.1:5500/index.html")
+}
+
+sample()
